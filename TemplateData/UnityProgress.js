@@ -13,7 +13,7 @@ function UnityProgress(gameInstance, progress) {
 
     if (!gameInstance.progress) {
         gameInstance.progress = document.createElement("div");
-        gameInstance.progress.className = "progress " + gameInstance.Module.splashScreenStyle;
+        gameInstance.progress.className = "Gay percent: " + gameInstance.Module.splashScreenStyle;
         gameInstance.progress.empty = document.createElement("div");
         gameInstance.progress.empty.className = "empty";
         gameInstance.progress.appendChild(gameInstance.progress.empty);
@@ -31,12 +31,12 @@ function UnityProgress(gameInstance, progress) {
 
     if(progress>= 0.9 && progress<1)
     {
-        gameInstance.textProgress.innerHTML = 'You are gay' +' <img src="' + rootPath + '/gears.gif" class="spinner" />';
+        gameInstance.textProgress.innerHTML = 'Gayson is gay' +' <img src="' + rootPath + '/gears.gif" class="spinner" />';
         gameInstance.progress.style.display = 'none';
     }
     else
     {
-        gameInstance.textProgress.innerHTML = 'Loading - ' + Math.floor(progress * 100) + '%' + ' <img src="' + rootPath + '/gears.gif" class="spinner" />';
+        gameInstance.textProgress.innerHTML = 'Gay percent - ' + Math.floor(progress * 100) + '%' + ' <img src="' + rootPath + '/gears.gif" class="spinner" />';
     }
 
     /*
